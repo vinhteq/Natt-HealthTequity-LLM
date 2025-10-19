@@ -19,7 +19,7 @@ tiktoken>=0.6.0
 # Colab note: install via pip first, then GitHub to avoid build issues
 whisper
 # If you specifically want the GitHub master build, comment the above and use:
-# git+https://github.com/openai/whisper.git
+git+https://github.com/openai/whisper.git
 
 # --- Audio processing and file handling ---
 ffmpeg-python>=0.2.0
@@ -41,3 +41,4 @@ tqdm>=4.66.1
 
 # --- Optional: Vosk (for local/offline ASR) ---
 vosk==0.3.45
+
