@@ -4,3 +4,5 @@ env/
 ENV/
 env.bak/
 venv.bak/
+VoicePipeline_Drive.ipynb
+VoicePipeline.ipynb
