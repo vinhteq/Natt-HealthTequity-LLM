@@ -1,7 +1,11 @@
 ﻿audio_file,ground_truth
 q1_es.wav,¿Cuáles son mis presiones arteriales sistólica y diastólica hoy?
-q2_es.wav,¿Cuáles fueron mis valores de presión arterial durante la última semana?
-q3_es.wav,¿Cuál es la tendencia de mis valores de presión arterial?
-q4_es.wav,¿Cuáles son los rangos normales para una persona como yo?
+q2_es.wav,¿Cuáles fueron mis lecturas de presión arterial durante la última semana?
+q3_es.wav,¿Cuál es la tendencia general de mi presión arterial este mes?
+q4_es.wav,¿Cuáles son los rangos normales de presión arterial para una persona de mi edad?
 q5_es.wav,¿Cuál era mi presión arterial el 10 de octubre?
-q6_es.wav,¿En qué día mi presión arterial excedió los niveles normales? Compare mi presión arterial promedio en la primera semana y la última semana de este mes. ¿Cuál fue mi presión arterial diastólica más baja este mes?
+q6_es.wav,¿Cuál fue mi presión arterial sistólica el 12 de octubre? ¿Cuál fue mi presión arterial diastólica el 30 de septiembre? ¿En qué día mi presión sistólica superó los 140 mm Hg?
+q7_es.wav,Compare mi presión arterial promedio desde la primera semana hasta la última semana de este mes.
+q8_es.wav,¿Cuál fue la presión arterial diastólica más baja registrada este mes?
+q9_es.wav,¿Ha mejorado mi presión arterial en comparación con el mes pasado?
+q10_es.wav,Muéstrame los valores sistólicos más altos y más bajos registrados hasta el momento. ¿Cuál es el máximo y el mínimo de presión arterial diastólica y sistólica este mes?
