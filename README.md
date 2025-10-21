@@ -103,5 +103,9 @@ HealthTequity-LLM/
 
 ## 📊 Flow Diagram
 
+<p align="center">
+  <img src="./assets/ChatGPT_ImageOct20_2025_08_15_40" width="900">
+  <br>
+  <em>End-to-end voice-to-insight pipeline integrating ASR, translation, LLM reasoning, and TTS.</em>
+</p>
 
-<img width="1536" height="1024" alt="ChatGPT Image Oct 20, 2025, 08_15_40 PM" src="https://github.com/user-attachments/assets/f173928a-2788-439a-a986-50ca362a89d7" />
