@@ -56,4 +56,5 @@ pipeline_results.csv # question → GPT-4o answer + structured fields
 
 ## 📊 Flow Diagram
 
-![Pipeline Flow]("C:\Users\natta\Downloads\ChatGPT Image Oct 20, 2025, 08_15_40 PM.png")
+
+<img width="1536" height="1024" alt="ChatGPT Image Oct 20, 2025, 08_15_40 PM" src="https://github.com/user-attachments/assets/f173928a-2788-439a-a986-50ca362a89d7" />
