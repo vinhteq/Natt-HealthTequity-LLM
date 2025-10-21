@@ -1,0 +1,10 @@
+﻿audio_file,ground_truth,whisper_transcription,WER,CER,SER,Substitutions,Deletions,Insertions
+q2_es.wav,¿Cuáles fueron mis lecturas de presión arterial durante la última semana?,¿Cuáles fueron mis lecturas de presión arterial durante la última semana?,0.0,0.0,0,0,0,0
+q3_es.wav,¿Cuál es la tendencia general de mi presión arterial este mes?,¿Cuál es la tendencia general de mi presión arterial este mes?,0.0,0.0,0,0,0,0
+q4_es.wav,¿Cuáles son los rangos normales de presión arterial para una persona de mi edad?,¿Cuáles son los rango normales de presión arterial para una persona de mi edad?,0.0714,0.0128,1,1,0,0
+q5_es.wav,¿Cuál era mi presión arterial el 10 de octubre?,¿Cuál era mi presión arterial el 10 de octubre?,0.0,0.0,0,0,0,0
+q6_es.wav,¿Cuál fue mi presión arterial sistólica el 12 de octubre? ¿Cuál fue mi presión arterial diastólica el 30 de septiembre? ¿En qué día mi presión sistólica superó los 140 mm Hg?,¿Cuál fue mi presión arterial cistólica el 12 de octubre? ¿Cuál fue mi presión arterial diastólica el 30 de septiembre? ¿En qué día mi presión cistólica superó los 140 milímetros HG?,0.0968,0.0595,1,3,0,0
+q7_es.wav,Compare mi presión arterial promedio desde la primera semana hasta la última semana de este mes.,Compare mi presión arterial promedio desde la primera semana hasta la última semana de este mes.,0.0,0.0,0,0,0,0
+q8_es.wav,¿Cuál fue la presión arterial diastólica más baja registrada este mes?,¿Cuál fue la presión arterial diastólica más baja registrada este mes?,0.0,0.0,0,0,0,0
+q9_es.wav,¿Ha mejorado mi presión arterial en comparación con el mes pasado?,¿Ha mejorado mi presión arterial en comparación con el mes pasado?,0.0,0.0,0,0,0,0
+q10_es.wav,Muéstrame los valores sistólicos más altos y más bajos registrados hasta el momento. ¿Cuál es el máximo y el mínimo de presión arterial diastólica y sistólica este mes?,muéstramen los valores histólicos más altos y más bajos registrados hasta el momento. ¿Cuál es el máximo y el mínimo de presión arterial diastólica y sistólica este mes?,0.0714,0.0121,1,2,0,0
