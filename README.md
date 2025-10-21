@@ -101,11 +101,5 @@ HealthTequity-LLM/
 └── Run_Audio_QA_Pipeline.ipynb
 
 
-## 📊 Flow Diagram
 
-<p align="center">
-  <img src="./assets/pipeline_diagram.png" width="900">
-  <br>
-  <em>End-to-end voice-to-insight pipeline integrating ASR, translation, LLM reasoning, and TTS.</em>
-</p>
 
