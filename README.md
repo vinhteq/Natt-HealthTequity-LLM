@@ -1,46 +1,59 @@
-# 🩺 HealthTequity Voice Processing Pipeline
+# 🧩 HealthTequity Case Study: Voice-Based Health Analytics Pipeline
 
-This repository demonstrates an end-to-end **Voice-to-Insight** system for the **HealthTequity case study**, which processes **Spanish medical speech** into **English insights** using ASR, translation, GPT-based analysis, and TTS.  
-It also evaluates transcription performance through **WER, CER, and SER metrics**.
-
----
-
-## 📘 Project Overview
-
-| Stage | Description | Technology |
-|-------|--------------|-------------|
-| **1️⃣ Synthetic Data Generation** | Creates a 30-day blood pressure dataset for one individual | Python + Pandas |
-| **2️⃣ Spanish Audio Generation** | Converts questions to Spanish speech and generates ground truth | gTTS + Deep Translator |
-| **3️⃣ Voice Pipeline (Main Notebook)** | Runs transcription → translation → GPT analysis → TTS → ASR evaluation | Whisper, GPT-4o-mini, JiWER |
-
-> The pipeline computes **Word Error Rate (WER)**, **Character Error Rate (CER)**, and **Sentence Error Rate (SER)** for both input and output sides.
+This project showcases a **voice-enabled AI pipeline** where Spanish-language medical questions are answered using **GPT‑4o** and grounded in a personalized **blood pressure dataset**. It integrates **speech recognition (ASR)**, **translation**, **text-to-speech (TTS)**, and **LLM-based reasoning** into one seamless workflow.
 
 ---
 
-## 📂 Repository Structure
+## 🔧 Project Structure
 
-```text
-HealthTequity-LLM/
-│
-├── data/
-│   ├── synthetic_csv/              ← Synthetic BP data + ground truth
-│   │   ├── synthetic_bp_one_person.csv
-│   │   └── ground_truth.csv
-│   │
-│   └── Spanish_audio/              ← Input Spanish audio files
-│       ├── question_1_es.wav
-│       ├── question_2_es.wav
-│       └── ...
-│
-├── results/
-│   ├── llm_outputs/                ← Transcriptions + LLM responses
-│   ├── tts_audio/                  ← Spanish audio answers
-│   └── evaluation_metrics/         ← WER/CER/SER + comparison chart
-│
-├
-│ 1_BloodPressure_Generator.ipynb
-│ 2_SpanishAudio_Generator.ipynb
-│ 3_HealthTequity_VoicePipeline.ipynb
-│
-├── requirements.txt
-└── README.md
+The pipeline is implemented across **three Jupyter notebooks**, each responsible for a key step in the data generation and question-answering process.
+
+---
+
+### 📘 Notebook 1: `Generate_Synthetic_BP_Dataset.ipynb`
+
+Generates a **synthetic blood pressure dataset** for an elderly patient (e.g., 95-year-old female) over 30 days, with realistic oscillation between normal and hypertensive readings.
+
+#### 🗂️ Outputs:
+/data/synthetic_csv/synthetic_bp_95_female.csv
+
+
+---
+
+### 📘 Notebook 2: `Generate_Spanish_Audio.ipynb`
+
+Processes a list of English questions and performs the following:
+
+- 🌐 **Translates** them into Spanish using `deep-translator`
+- 🔊 **Generates Spanish audio** (.wav) with `gTTS`
+- 🧾 Creates a `ground_truth.csv` linking each audio file to its Spanish transcription
+
+#### 🗂️ Outputs:
+/data/synthetic_csv/ground_truth.csv
+/data/Spanish_audio/*.wav
+
+
+---
+
+### 📘 Notebook 3: `Run_Audio_QA_Pipeline.ipynb`
+
+This is the **core pipeline** that:
+
+1. 🗣️ Transcribes Spanish audio questions using **Whisper ASR**
+2. 🤖 Feeds the transcription + CSV data into **GPT‑4o** to answer the question
+3. 📊 Evaluates transcription quality via **WER**, **CER**, and **SER**
+4. 📝 Saves all results, including generated answers and extracted fields
+
+#### 📥 Inputs:
+- `synthetic_bp_*.csv` (blood pressure data)
+- `*.wav` files + `ground_truth.csv` (Spanish audio and transcripts)
+
+#### 🗂️ Outputs:
+pipeline_results.csv # question → GPT-4o answer + structured fields
+
+
+---
+
+## 📊 Flow Diagram
+
+![Pipeline Flow]("C:\Users\natta\Downloads\ChatGPT Image Oct 20, 2025, 08_15_40 PM.png")
